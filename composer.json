@@ -1,0 +1,28 @@
+{
+    "name": "soampliapps/base",
+    "type": "library",
+    "description": "Base application structure",
+    "keywords": [
+        "application",
+        "framework",
+        "structure"
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "symfony/class-loader": ">=2.2.0",
+        "pimple/pimple": ">=2.0.0"
+    },
+    "authors": [
+        {
+            "name": "IDS",
+            "email": "waseemids369@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-0": {
+            "SoampliApps\\Base": ""
+        }
+    }
+}
