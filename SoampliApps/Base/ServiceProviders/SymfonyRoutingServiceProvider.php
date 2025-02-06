@@ -85,9 +85,9 @@ class SymfonyRoutingServiceProvider implements ServiceProviderInterface
                     $variables = $filter->filterRoute($variables);
                 }
             }
-
             try {
-                return call_user_func_array($route_action, $variables);
+                return $route_action(...array_values($variables));
+                //return call_user_func_array($route_action, array_values($variables));
             } catch (\Exception $e) {
                 throw $e;
             }

@@ -1,7 +1,8 @@
 <?php
 namespace SoampliApps\Base\Events;
+use Symfony\Contracts\EventDispatcher\Event;
 
-class StandardEvent extends \Symfony\Contracts\EventDispatcher\Event
+class StandardEvent extends Event
 {
     protected $payload = null;
 
